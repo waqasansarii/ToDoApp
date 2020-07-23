@@ -1,0 +1,244 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+}
+.todo-div{
+    margin: 0 auto;
+    text-align: center;
+}
+.todo-head{
+    font-size: 4em;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(235, 226, 148);
+    background-color:  beige;
+
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 30px;
+    box-shadow: 25px 15px 30px inset beige;
+    border-radius: 20px;
+    
+}
+.todo-inp{
+    margin: 40px auto;
+    width: 300px;
+    padding: 10px 12px;
+    border-radius: 10px;
+    outline: none;
+    border: transparent;
+    font-size: 1.2em;
+    box-shadow: 5px 5px 15px inset rgb(182, 160, 131);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 8px;
+}
+.todo-inp:active,:focus{
+    border: 1px solid lightskyblue !important;
+    background-color: rgb(234, 247, 253);
+}
+.add-btn{
+    background-color: rgb(129, 128, 121);
+    color: white;
+    cursor: pointer;
+    border:none;
+    width: 60px;
+    padding:10px;
+    margin: 5px;
+    outline: none;
+    border-radius: 40px;
+    font-weight: bold;
+    font-style: italic;
+}
+.delt-btn{
+    background-color: rgb(129, 128, 121);
+    color: white;
+    width: 100px;
+    padding:10px;
+    cursor: pointer;
+    border: none;
+    margin: 5px;
+    outline: none;
+    border-radius: 40px;
+    font-weight: bold;
+    font-style: italic;
+}
+.add-btn:hover,.delt-btn:hover{
+    background-color: rgb(226, 235, 235);
+    border: none;
+    outline: none;
+    color: black;
+}
+.add-btn:active,.delt-btn:active{
+    transform: translate(1px,3px);
+}
+
+.fa-trash-o{
+   font-size: 15px !important;
+}
+.list{
+
+}
+.todo-li{
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 380px;
+    font-size: 1.1em;
+    height: 33px;
+    padding-top: 10px;
+    border-bottom: double 2px rgb(148, 142, 55);
+    max-width: 400px;
+}
+.editBtn{
+    width: 45px;
+    padding: 7px;
+    border-radius: 20px;
+    background-color: rgb(168, 156, 62);
+    outline: none;
+    float: right;
+    right: 20px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    
+}
+.dltBtn{
+    border: none;
+    color: white;
+    width: 40px;
+    padding: 3px;
+    border-radius: 20px;
+    background-color: rgb(160, 148, 58);
+    outline: none;
+    float: right ;
+    right: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    clear: both;
+    font-size: 20px;
+}
+.dltBtn:hover,.editBtn:hover{
+    background-color: rgb(226, 235, 235);
+    color: black;
+
+}
+.editBtn:active,.dltBtn:active{
+    transform: translate(1px,3px);
+    box-shadow: 3px 4px 6px  black;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:521px){
+    .todo-head{
+        font-size: 4em;
+        width: 600px;
+    }
+}
+@media screen and (max-width:520px){
+    .todo-head{
+        font-size: 3em;
+        width: auto;
+        border-radius: 1px;
+    }
+}
+
+@media screen and (max-width:420px){
+    .todo-head{
+        font-size: 2.5em;
+        width: auto;
+        
+        border-radius: 2px;
+    }
+}
+
+@media screen and (min-width:541px){
+    .todo-inp{
+        /* font-size: 4em; */
+        width: 300px;
+    }
+    .add-btn{
+        padding: 12px;
+        width: 60px;
+    }
+}
+@media screen and (max-width:540px){
+    .todo-inp{
+        width: 250px;
+    }
+}
+@media screen and (max-width:430px){
+    /* .todo-inp{
+        width: 220px;
+        padding: 8px;
+        font-size: 1em;
+        margin-bottom: 8px;
+
+    } */
+    .add-btn,.delt-btn{
+        width: 50px;
+        padding: 7px;
+    }
+}
+@media screen and (max-width:380px){
+    .todo-inp{
+        width: 230px;
+        padding: 8px;
+        font-size: 1em;
+        margin-bottom: 8px;
+    }
+    .add-btn{
+        width: 45px;
+        padding: 6px;
+    }
+}
+@media screen and (max-width:540px){
+    .delt-btn{
+        width: 100px;
+        padding: 8px;
+        margin-left: auto;
+    }
+    .add-btn{
+        padding: 8px;
+    }
+}
+
+@media screen and (min-width:481px){
+    .todo-li{
+        width: 420px;
+    }
+}
+@media screen and (max-width:480px){
+    .todo-li{
+        width: 320px;
+    }
+}
+@media screen and (max-width:420px){
+    .todo-li{
+        width: 280px;
+    }
+}
+@media screen and (max-width:320px){
+    .todo-li{
+        width: auto;
+    }
+    .editBtn{
+        width: 40px;
+    }
+    .dltBtn{
+        width: 52px;
+    }
+}
