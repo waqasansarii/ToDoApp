@@ -24,17 +24,19 @@ body{
     margin: 40px auto;
     width: 300px;
     padding: 10px 12px;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     outline: none;
     border: transparent;
+    background-color: transparent;
     font-size: 1.2em;
-    box-shadow: 5px 5px 15px inset rgb(182, 160, 131);
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin-bottom: 8px;
+    border-bottom: double 2px;
+    text-align: center;
 }
 .todo-inp:active,:focus{
-    border: 1px solid lightskyblue !important;
-    background-color: rgb(234, 247, 253);
+    /* border: 1px solid lightskyblue !important; */
+    /* background-color: rgb(234, 247, 253); */
 }
 .add-btn{
     background-color: rgb(129, 128, 121);
